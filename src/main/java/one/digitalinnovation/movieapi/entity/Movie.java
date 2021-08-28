@@ -26,9 +26,10 @@ public class Movie {
     @Column(nullable = false)
     private String producerName;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String durationTime;
 
+    @Column(nullable = false)
     private LocalDate releaseDate;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})

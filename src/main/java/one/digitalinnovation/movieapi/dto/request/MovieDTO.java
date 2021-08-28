@@ -29,6 +29,7 @@ public class MovieDTO {
     @NotEmpty
     private String durationTime;
 
+    @NotEmpty
     private String releaseDate;
 
     @Valid
